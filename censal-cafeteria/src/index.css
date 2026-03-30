@@ -8,3 +8,24 @@ html,
 body {
   overflow-x: hidden;
 }
+
+/* ocultar scrollbar pero permitir scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE y Edge antiguo */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* .fade-right {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 85%,
+    rgba(0, 0, 0, 0.7) 92%,
+    rgba(0, 0, 0, 0.3) 96%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to right, black 85%, rgba(243, 22, 22, 0.7) 92%);
+} */

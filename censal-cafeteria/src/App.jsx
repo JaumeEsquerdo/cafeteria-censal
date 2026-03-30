@@ -52,20 +52,24 @@ function App() {
                   duration: 0.5,
                   ease: "cubic-bezier(0.45, 0, 0.55, 1)",
                 }}
-                className="flex flex-col pt-4 pb-6 gap-6 overflow-x-auto"
+                className="flex flex-col pt-4 pb-6 gap-6"
               >
                 <h3 className="text-lg text-center">2 páginas</h3>
-                <div className="w-200 mx-4 shadow-xl rounded-xl overflow-hidden">
-                  <img
-                    src="/imgs/hotel-fachada.webp"
-                    className="w-full h-full object-cover"
-                  />
+                <div className=" overflow-x-auto no-scrollbar fade-right">
+                  <div className="w-200 mx-4 shadow-xl rounded-xl overflow-hidden ">
+                    <img
+                      src="/imgs/hotel-fachada.webp"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="w-200 mx-4 shadow-xl rounded-xl overflow-hidden">
-                  <img
-                    src="/imgs/hotel-fachada.webp"
-                    className="w-full h-full object-cover"
-                  />
+                <div className=" overflow-x-auto no-scrollbar fade-right">
+                  <div className="w-200 mx-4 shadow-xl rounded-xl overflow-hidden">
+                    <img
+                      src="/imgs/hotel-fachada.webp"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </motion.div>
             )}
