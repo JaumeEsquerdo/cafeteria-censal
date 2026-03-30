@@ -1,5 +1,6 @@
 import { NavBar } from "./components/NavBar";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const [navigation, setNavigation] = useState("comidas");
@@ -14,36 +15,53 @@ function App() {
           <NavBar navigation={navigation} setNavigation={setNavigation} />
         </header>
         <main className="lg:max-w-3/4 flex flex-col lg:items-center lg:mx-auto">
-          {navigation === "comidas" && (
-            <div className="flex flex-col gap-6 p-4 pb-6">
-              <img
-                src="/imgs/brava-pago.png"
-                alt="Carta de comidas"
-                className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
-              />
-              <img
-                src="/imgs/brava-pago.png"
-                alt="Carta de comidas"
-                className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
-              />
-            </div>
-          )}
-          {navigation === "bebidas" && (
-            <div className="flex flex-col pt-4 pb-6 gap-6 overflow-x-auto">
-              <div className="w-200  mx-4 shadow-xl">
+          <AnimatePresence mode="wait">
+            {navigation === "comidas" && (
+              <motion.div
+                ket="comidas"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -100, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="flex flex-col gap-6 p-4 pb-6"
+              >
                 <img
-                  src="/imgs/hotel-fachada.webp"
-                  className="w-full h-full object-cover rounded-xl"
+                  src="/imgs/brava-pago.png"
+                  alt="Carta de comidas"
+                  className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
                 />
-              </div>
-              <div className="w-200    mx-4 shadow-xl">
                 <img
-                  src="/imgs/hotel-fachada.webp"
-                  className="w-full h-full object-cover rounded-xl"
+                  src="/imgs/brava-pago.png"
+                  alt="Carta de comidas"
+                  className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
                 />
-              </div>
-            </div>
-          )}
+              </motion.div>
+            )}
+
+            {navigation === "bebidas" && (
+              <motion.div
+                key="bebidas"
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: 100, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="flex flex-col pt-4 pb-6 gap-6 overflow-x-auto"
+              >
+                <div className="w-200  mx-4 shadow-xl">
+                  <img
+                    src="/imgs/hotel-fachada.webp"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+                <div className="w-200    mx-4 shadow-xl">
+                  <img
+                    src="/imgs/hotel-fachada.webp"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </main>
       </div>
     </>
