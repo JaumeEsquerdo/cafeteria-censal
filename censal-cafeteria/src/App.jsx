@@ -13,7 +13,7 @@ function App() {
           </div>
           <NavBar navigation={navigation} setNavigation={setNavigation} />
         </header>
-        <main>
+        <main className="lg:max-w-3/4 flex flex-col lg:items-center lg:mx-auto">
           {navigation === "comidas" && (
             <div className="flex flex-col gap-6 p-4 pb-6">
               <img
