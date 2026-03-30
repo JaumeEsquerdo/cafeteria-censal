@@ -28,6 +28,7 @@ function App() {
                 }}
                 className="flex flex-col gap-6 p-4 pb-6"
               >
+                <h3 className="text-lg text-center">2 páginas</h3>
                 <img
                   src="/imgs/brava-pago.png"
                   alt="Carta de comidas"
@@ -53,16 +54,17 @@ function App() {
                 }}
                 className="flex flex-col pt-4 pb-6 gap-6 overflow-x-auto"
               >
-                <div className="w-200  mx-4 shadow-xl">
+                <h3 className="text-lg text-center">2 páginas</h3>
+                <div className="w-200 mx-4 shadow-xl rounded-xl overflow-hidden">
                   <img
                     src="/imgs/hotel-fachada.webp"
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-200    mx-4 shadow-xl">
+                <div className="w-200 mx-4 shadow-xl rounded-xl overflow-hidden">
                   <img
                     src="/imgs/hotel-fachada.webp"
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </motion.div>
