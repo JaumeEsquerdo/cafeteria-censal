@@ -30,12 +30,12 @@ function App() {
               >
                 <h3 className="text-lg text-center">2 páginas</h3>
                 <img
-                  src="/imgs/brava-pago.png"
+                  src="/imgs/pagina-comidas-1.webp"
                   alt="Carta de comidas"
                   className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
                 />
                 <img
-                  src="/imgs/brava-pago.png"
+                  src="/imgs/pagina-comidas-2.webp"
                   alt="Carta de comidas"
                   className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
                 />
