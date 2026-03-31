@@ -26,7 +26,7 @@ function App() {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -100, opacity: 0 }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.8,
                   ease: "cubic-bezier(0.45, 0, 0.55, 1)",
                 }}
                 className="flex flex-col gap-6 p-4 pb-6"
@@ -52,7 +52,7 @@ function App() {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: 100, opacity: 0 }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.8,
                   ease: "cubic-bezier(0.45, 0, 0.55, 1)",
                 }}
                 className="flex flex-col pt-4 pb-6 gap-6"

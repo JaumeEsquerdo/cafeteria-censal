@@ -8,7 +8,8 @@ export const LiquidNav = ({ setNavigation }) => {
   return (
     <nav className="flex gap-4 p-2">
       {tabs.map((tab) => (
-        <button
+        <motion.button
+          layout
           key={tab}
           onClick={() => {
             setActiveTab(tab);
@@ -24,7 +25,7 @@ export const LiquidNav = ({ setNavigation }) => {
               transition={{ type: "spring", bounce: 0.3, duration: 1.8 }}
             />
           )}
-        </button>
+        </motion.button>
       ))}
     </nav>
   );
