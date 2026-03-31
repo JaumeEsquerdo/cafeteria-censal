@@ -8,14 +8,13 @@ export const LiquidNav = ({ setNavigation }) => {
   return (
     <nav className="flex gap-4 p-2">
       {tabs.map((tab) => (
-        <motion.button
-          layout
+        <button
           key={tab}
           onClick={() => {
             setActiveTab(tab);
             setNavigation(tab);
           }}
-          className={`relative text-xl py-2 px-4 bg-blue-200 rounded-4xl border-2 cursor-pointer shadow-md overflow-hidden text-gray-700 ${activeTab === tab ? "scale-[1.1]" : ""} transition-colors transition-transform duration-800 ease-in-out`}
+          className={`relative text-xl font-medium py-2 px-4 bg-blue-200 rounded-4xl border-2 cursor-pointer shadow-md overflow-hidden ${activeTab === tab ? "text-black" : "text-gray-600 border-gray-400"}  active:scale-[0.7]  transition-all duration-800 ease-in-out`}
         >
           <span className="relative z-10">{tab}</span>
           {activeTab === tab && (
@@ -25,7 +24,7 @@ export const LiquidNav = ({ setNavigation }) => {
               transition={{ type: "spring", bounce: 0.3, duration: 1.8 }}
             />
           )}
-        </motion.button>
+        </button>
       ))}
     </nav>
   );
