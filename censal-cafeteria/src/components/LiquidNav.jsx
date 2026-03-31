@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const tabs = ["Comidas", "Bebidas"];
+const tabs = ["Comidas"];
+/* carta "Bebidas" en desarrollo */
 
 export const LiquidNav = ({ setNavigation }) => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
