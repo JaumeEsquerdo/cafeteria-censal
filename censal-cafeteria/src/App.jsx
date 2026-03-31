@@ -37,6 +37,7 @@ function App() {
                   alt="Carta de comidas"
                   width={861}
                   height={1216}
+                  fetchPriority="high"
                   className="rounded-2xl shadow-xl w-full max-w-full  h-auto block"
                 />
                 <img
@@ -67,6 +68,7 @@ function App() {
                     <img
                       src="/imgs/hotel-fachada.webp"
                       className="w-full h-full object-cover"
+                      fetchPriority="high"
                     />
                   </div>
                 </div>
