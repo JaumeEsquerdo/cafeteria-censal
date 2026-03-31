@@ -11,10 +11,12 @@ function App() {
       <Onboarding />
       <div className="text-4xl flex flex-col gap-6 min-h-screen bg-blue-50  max-w-full ">
         <header className="flex flex-col gap-4 pt-4 items-center">
-          <div className="flex flex-col gap-[0.4px]">
-            <h1 className="text-center text-2xl">la carta de la</h1>
-            <h2 className="text-3xl font-medium"> Cafetería Censal</h2>
-          </div>
+          <img
+            src="/logo-hotel-censal.svg"
+            width={140}
+            fetchPriority="high"
+            alt="Logo Cafetería Censal para el header de la carta de comidas y bebidas"
+          />
           <LiquidNav setNavigation={setNavigation} />
         </header>
         <main className="min-h-screen lg:max-w-3/4 flex flex-col lg:items-center lg:mx-auto">
