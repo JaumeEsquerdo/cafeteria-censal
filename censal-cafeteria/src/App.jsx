@@ -1,11 +1,13 @@
 import { NavBar } from "./components/NavBar";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Onboarding } from "./components/Onboarding";
 
 function App() {
   const [navigation, setNavigation] = useState("comidas");
   return (
     <>
+      <Onboarding />
       <div className="text-4xl flex flex-col gap-6 min-h-screen bg-blue-50  max-w-full ">
         <header className="flex flex-col gap-4 pt-4 items-center">
           <div className="flex flex-col gap-[0.4px]">
