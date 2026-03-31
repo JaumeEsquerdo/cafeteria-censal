@@ -17,7 +17,7 @@ function App() {
           </div>
           <LiquidNav setNavigation={setNavigation} />
         </header>
-        <main className="lg:max-w-3/4 flex flex-col lg:items-center lg:mx-auto">
+        <main className="min-h-screen lg:max-w-3/4 flex flex-col lg:items-center lg:mx-auto">
           <AnimatePresence mode="wait">
             {navigation === "Comidas" && (
               <motion.div
