@@ -1,10 +1,11 @@
-import { NavBar } from "./components/NavBar";
+// import { NavBar } from "./components/NavBar";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Onboarding } from "./components/Onboarding";
+import { LiquidNav } from "./components/LiquidNav";
 
 function App() {
-  const [navigation, setNavigation] = useState("comidas");
+  const [navigation, setNavigation] = useState("Comidas");
   return (
     <>
       <Onboarding />
@@ -14,11 +15,11 @@ function App() {
             <h1 className="text-center text-2xl">la carta de la</h1>
             <h2 className="text-3xl font-medium"> Cafetería Censal</h2>
           </div>
-          <NavBar navigation={navigation} setNavigation={setNavigation} />
+          <LiquidNav setNavigation={setNavigation} />
         </header>
         <main className="lg:max-w-3/4 flex flex-col lg:items-center lg:mx-auto">
           <AnimatePresence mode="wait">
-            {navigation === "comidas" && (
+            {navigation === "Comidas" && (
               <motion.div
                 key="comidas"
                 initial={{ x: -100, opacity: 0 }}
@@ -44,7 +45,7 @@ function App() {
               </motion.div>
             )}
 
-            {navigation === "bebidas" && (
+            {navigation === "Bebidas" && (
               <motion.div
                 key="bebidas"
                 initial={{ x: 100, opacity: 0 }}
