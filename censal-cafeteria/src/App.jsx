@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Onboarding />
-      <div className="text-4xl flex flex-col gap-6 min-h-screen bg-blue-50  max-w-full ">
+      <div className="text-4xl flex flex-col gap-6 min-h-screen bg-blue-50 dark:bg-gray-100  max-w-full ">
         <header className="flex flex-col gap-4 pt-4 items-center">
           <img
             src="/logo-hotel-censal.svg"

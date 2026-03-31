@@ -32,7 +32,7 @@ export const Onboarding = () => {
           exit={{ y: "100vh", borderRadius: 20 }}
           transition={{ duration: 1.4, ease: "cubic-bezier(0.45, 0, 0.55, 1)" }}
           onClick={closeOnboarding}
-          className="fixed inset-0 z-999 flex flex-col items-center justify-center bg-blue-50"
+          className="fixed inset-0 z-999 flex flex-col items-center justify-center bg-blue-50 dark:bg-gray-100"
         >
           <img
             src="/logo-hotel-censal.svg"
