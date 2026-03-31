@@ -37,6 +37,9 @@ export const Onboarding = () => {
           <img
             src="/logo-hotel-censal.svg"
             className="w-2/5 h-auto"
+            width={200}
+            height={100}
+            fetchPriority="high"
             alt="Logo Café Censal"
           />
         </motion.div>

@@ -35,11 +35,15 @@ function App() {
                 <img
                   src="/imgs/pagina-comidas-1.webp"
                   alt="Carta de comidas"
-                  className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
+                  width={861}
+                  height={1216}
+                  className="rounded-2xl shadow-xl w-full max-w-full  h-auto block"
                 />
                 <img
                   src="/imgs/pagina-comidas-2.webp"
                   alt="Carta de comidas"
+                  width={861}
+                  height={1216}
                   className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
                 />
               </motion.div>
