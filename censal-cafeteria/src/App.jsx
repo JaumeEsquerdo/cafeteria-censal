@@ -35,18 +35,14 @@ function App() {
               >
                 <h3 className="text-lg text-center">2 páginas</h3>
                 <img
-                  src="/imgs/pagina-comidas-1.webp"
+                  src="/imgs/comida-censal-1.webp"
                   alt="Carta de comidas"
-                  width={861}
-                  height={1216}
                   fetchPriority="high"
                   className="rounded-2xl shadow-xl w-full max-w-full  h-auto block"
                 />
                 <img
-                  src="/imgs/pagina-comidas-2.webp"
+                  src="/imgs/comida-censal-2.webp"
                   alt="Carta de comidas"
-                  width={861}
-                  height={1216}
                   className="rounded-2xl shadow-xl w-full max-w-full h-auto block"
                 />
               </motion.div>
